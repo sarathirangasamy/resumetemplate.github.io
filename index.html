@@ -151,6 +151,83 @@
     </div>
   </div>
 </div>
+<div class="demo">
+  <div class="pricing">
+    <div class="container">
+      <div class="row">
+        <div class="col">
+          <div class="section_title_container text-center">
+            <div class="section_title"><h2>Hosting Package 4 You</h2></div>
+            <div class="section_subtitle">Everything that you need to host and manage your website</div><br><br>
+          </div>
+        </div>
+      </div>
+      <div class="row pricing_row">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-4 col-sm-6">
+                <div class="pricingTable">
+                    <div class="pricingTable-header">
+                        <h3 class="title">Standard</h3>
+                        <div class="price-value">
+                            <span class="currency">$</span>
+                            <span class="amount">10</span>
+                            <span class="month">per month</span>
+                        </div>
+                    </div>
+                    <ul class="pricing-content">
+                        <li>50GB Disk Space</li>
+                        <li>50 Email Accounts</li>
+                        <li>50GB Bandwidth</li>
+                        <li>15 Subdomains</li>
+                        <li>20 Domains</li>
+                    </ul>
+                    <a href="#" class="pricingTable-signup">Sign Up</a>
+                </div>
+            </div>
+            <div class="col-md-4 col-sm-6">
+                <div class="pricingTable pink">
+                    <div class="pricingTable-header">
+                        <h3 class="title">Business</h3>
+                        <div class="price-value">
+                            <span class="currency">$</span>
+                            <span class="amount">20</span>
+                            <span class="month">per month</span>
+                        </div>
+                    </div>
+                    <ul class="pricing-content">
+                        <li>50GB Disk Space</li>
+                        <li>50 Email Accounts</li>
+                        <li>50GB Bandwidth</li>
+                        <li>15 Subdomains</li>
+                        <li>20 Domains</li>
+                    </ul>
+                    <a href="#" class="pricingTable-signup">Sign Up</a>
+                </div>
+            </div>
+            <div class="col-md-4 col-sm-6">
+                <div class="pricingTable purple">
+                    <div class="pricingTable-header">
+                        <h3 class="title">Business</h3>
+                        <div class="price-value">
+                            <span class="currency">$</span>
+                            <span class="amount">20</span>
+                            <span class="month">per month</span>
+                        </div>
+                    </div>
+                    <ul class="pricing-content">
+                        <li>50GB Disk Space</li>
+                        <li>50 Email Accounts</li>
+                        <li>50GB Bandwidth</li>
+                        <li>15 Subdomains</li>
+                        <li>20 Domains</li>
+                    </ul>
+                    <a href="#" class="pricingTable-signup">Sign Up</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
 <div class="section" id="portfolio">
   <div class="container">
     <div class="row">
@@ -524,3 +601,139 @@
     <script src="scripts/main.js"></script>
   </body>
 </html>
+
+<style type="text/css" media="screen">  
+
+.demo{ background: #e7e7e7; }
+.pricingTable{
+    background-color: #fff;
+    font-family: 'Krub', sans-serif;
+    text-align: center;
+    padding: 0 0 10px;
+    margin: 0 30px;
+    border: 5px solid #11bfbf;
+    position: relative;
+    z-index: 1;
+    transition:all 0.3s;
+}
+.pricingTable .pricingTable-header{
+    color: #fff;
+    background-color: #11bfbf;
+    padding: 15px 0 50px;
+    margin: 0 0 35px;
+    position: relative;
+    z-index: 1;
+    transition: all 0.3s;
+}
+.pricingTable:hover .pricingTable-header{ text-shadow: 0 0 5px #000; }
+.pricingTable .pricingTable-header:after{
+    content: '';
+    background-color: #11bfbf;
+    height: 50px;
+    width: 50px;
+    transform: translateX(-50%) rotate(45deg);
+    position: absolute;
+    left: 50%;
+    bottom: -25px;
+}
+.pricingTable .title{
+    font-size: 35px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    margin: 0 0 15px;
+}
+.pricingTable .currency{
+    font-size: 30px;
+    vertical-align: top;
+    display: inline-block;
+}
+.pricingTable .amount{
+    font-size: 60px;
+    font-weight: 600;
+    line-height: 60px;
+    display: inline-block;
+}
+.pricingTable .month{
+    font-size: 18px;
+    margin-left: -5px;
+    display: block;
+}
+.pricingTable .pricing-content{
+    color: #505050;
+    text-align: center;
+    padding: 0;
+    margin:0 auto 20px;
+    list-style: none;
+    display: inline-block;
+}
+.pricingTable .pricing-content li{
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 45px;
+    text-transform: capitalize;
+    letter-spacing: 1px;
+    padding: 10px 20px 10px;
+    border-bottom: 2px solid #11bfbf;
+    position: relative;
+}
+.pricingTable .pricing-content li:last-child{ border-bottom: none; }
+.pricingTable .pricing-content li:after{
+    content: "\f00c";
+    color: #fff;
+    background-color: #11bfbf;
+    font-family: "Font Awesome 5 Free";
+    font-size: 12px;
+    font-weight: 900;
+    line-height: 18px;
+    height: 18px;
+    width: 18px;
+    border-radius: 50%;
+    transform: translateX(-50%);
+    position: absolute;
+    left: 50%;
+    bottom: -10px;
+}
+.pricingTable .pricing-content li:last-child:after{ display: none; }
+.pricingTable .pricingTable-signup{
+    color: #fff;
+    background-color: #11bfbf;
+    font-size: 15px;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    text-align: center;
+    width: 80%;
+    padding: 15px 25px;
+    margin: 0 auto;
+    border: 3px solid #fff;
+    display: inline-block;
+    position: relative;
+    transition: all 0.3s;
+}
+.pricingTable .pricingTable-signup:hover{
+    box-shadow: 0 0 10px #000;
+    text-shadow: 0 0 5px #000;
+}
+.pricingTable.pink,
+.pricingTable.pink .pricing-content li{ border-color: #e84393; }
+.pricingTable.pink .pricingTable-header,
+.pricingTable.pink .pricingTable-header:after,
+.pricingTable.pink .pricing-content li:after,
+.pricingTable.pink .pricingTable-signup{ background-color: #e84393; }
+.pricingTable.purple,
+.pricingTable.purple .pricing-content li{ border-color: #6c5ce7; }
+.pricingTable.purple .pricingTable-header,
+.pricingTable.purple .pricingTable-header:after,
+.pricingTable.purple .pricing-content li:after,
+.pricingTable.purple .pricingTable-signup{ background-color: #6c5ce7; }
+@media only screen and (max-width: 1200px){
+    .pricingTable{ margin: 0 0 30px; }
+}
+@media only screen and (max-width: 990px){
+    .pricingTable{ margin: 0 30px 30px; }
+}
+@media only screen and (max-width: 359px){
+    .pricingTable{ margin: 0 0 30px; }
+}
+
+</style>
